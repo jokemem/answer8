@@ -82,6 +82,15 @@ def save_note():
     else:
         print('Замітка для збереження не вибрана!')
 button_note_save.clicked.connect(save_note)
+def del_note():
+    if list_notes.selectedItems():
+        key = list_notes.selectedItems()[0].text()
+        def notes[key]
+        list_notes.clear()
+        list_tags.clear()
+        field_text.clear()
+        list_notes.addItem()
+
 
 notes_win.show()
 with open("notes_data.json", "r") as file:
